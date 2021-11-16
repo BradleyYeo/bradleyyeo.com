@@ -1,4 +1,4 @@
-# zenorocha.com
+# bradleyyeo.com
 
 > My personal website <3
 

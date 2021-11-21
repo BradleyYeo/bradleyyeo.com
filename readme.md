@@ -23,7 +23,7 @@ $ git clone https://github.com/zenorocha/zenorocha.com.git
 2. Then go to the project's folder:
 
 ```sh
-cd zenorocha.com
+cd bradleyyeo.com
 ```
 
 3. Install all dependencies:

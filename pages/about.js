@@ -9,7 +9,7 @@ import items from '../data/about'
 export async function getStaticProps() {
   const meta = {
     title: 'About // Zeno Rocha',
-    description: "<p><strong>Hey, I'm Zeno Rocha.</strong> I started as a software engineer back in 2009, working with Flash.</p><p>I'm currently the <strong>VP of Developer Experience</strong> at WorkOS. Before that, I was the CPO at Liferay Cloud. I'm originally from Brazil and now <strong>living in sunny California</strong> with my amazing wife and beautiful daughter.</p><p><strong>I love dark mode</strong>, open source, and side projects. When I'm not working, I like running, watching movies, and <strong>eating cheese</strong>.</p>",
+    description: "<p><strong>Hey, I'm Bradley.</strong> I started as a software engineer back in 2009, working with Flash.</p><p>I'm currently the <strong>VP of Developer Experience</strong> at WorkOS. Before that, I was the CPO at Liferay Cloud. I'm originally from Brazil and now <strong>living in sunny California</strong> with my amazing wife and beautiful daughter.</p><p><strong>I love dark mode</strong>, open source, and side projects. When I'm not working, I like running, watching movies, and <strong>eating cheese</strong>.</p>",
     tagline: 'Create. Share. Repeat.',
     image: '/static/images/about-bw.jpg',
     gradientColor: 'pink-purple',

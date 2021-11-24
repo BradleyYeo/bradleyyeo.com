@@ -17,7 +17,7 @@
 1. Clone this repo:
 
   ```sh
-$ git clone https://github.com/zenorocha/zenorocha.com.git
+$ git clone https://github.com/bradleyyeo/bradleyyeo.com.git
   ```
 
 2. Then go to the project's folder:

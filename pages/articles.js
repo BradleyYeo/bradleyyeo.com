@@ -19,7 +19,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      title: 'Articles // Zeno Rocha',
+      title: 'Articles // Bradley Yeo',
       tagline: 'Stories. Updates. Guides.',
       image: '/static/images/articles-bw.jpg',
       gradientColor: 'yellow-pink',

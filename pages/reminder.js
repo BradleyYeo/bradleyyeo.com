@@ -4,7 +4,7 @@ import Main from '../layouts/Main'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Reminder // Zeno Rocha',
+    title: 'Reminder // Bradley Yeo',
     description: 'Time is the most important asset. Time does not equal money. Time equals life. And you only have one chance to make it right.',
     tagline: 'Tick-tock. Tick-tock.',
     image: '/static/images/reminder-bw.jpg',

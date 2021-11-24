@@ -6,7 +6,7 @@ import ShortcutHome from '../components/ShortcutHome'
 export async function getStaticProps() {
   return {
     props: {
-      title: 'Bradley Yeo Kian',
+      title: 'Bradley Yeo',
       description: 'Building world-class products that make developers happy',
       image: '/static/images/home-bw.jpg',
     },

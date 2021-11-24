@@ -6,7 +6,7 @@ import categories from '../data/uses'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Uses // Zeno Rocha',
+    title: 'Uses // Bradley Yeo',
     description: "I often get messages asking about specific pieces of <strong>software or hardware I use</strong>. This page is a <strong>living document</strong> with everything that I'm using nowadays.",
     tagline: 'Tools. Apps. Gear.',
     image: '/static/images/uses-bw.jpg',

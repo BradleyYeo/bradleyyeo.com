@@ -8,7 +8,7 @@ import items from '../data/projects'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Projects // Zeno Rocha',
+    title: 'Projects // Bradley Yeo',
     tagline: 'Work. Hobby. Open Source.',
     image: '/static/images/projects-bw.jpg',
     gradientColor: 'cyan-green',

@@ -9,7 +9,7 @@ function Post(props) {
     return <ErrorMessage code={props.errorCode} />
   }
 
-  const title = `${props.title} // Zeno Rocha`
+  const title = `${props.title} // Bradley Yeo`
   const description = props.description || ''
   const url = `https://zenorocha.com/${props.slug}`
   const image = props.image ? `https://zenorocha.com${props.image}` : 'https://zenorocha.com/static/images/home-opt.jpg'

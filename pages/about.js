@@ -27,7 +27,7 @@ function About(props) {
     return <div className="about">
       <div className="about-section">
         <Image
-          alt="Zeno"
+          alt="Bradley"
           src="/static/images/bradley-bw.jpg"
           width="336"
           height="336"
@@ -110,8 +110,8 @@ function About(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/About" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://bradleyyeo.com/About" property="og:url" />
+        <meta content={`https://bradleyyeo.com${image}`} property="og:image" />
       </Head>
 
       {renderIntro()}
@@ -119,7 +119,7 @@ function About(props) {
       <h2>Bio</h2>
       {renderBio()}
 
-      <h2>Career</h2>
+      <h2>Experience</h2>
       {renderAll()}
     </div>
   )

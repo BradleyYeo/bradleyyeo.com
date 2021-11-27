@@ -13,7 +13,7 @@ export default function Navbar() {
   return <AnimateSharedLayout>
     <header className="site-header">
       <Link href="/">
-        <a className="btn-header btn-logo">z</a>
+        <a className="btn-header btn-logo">B</a>
       </Link>
 
       <nav className="site-nav">
@@ -47,12 +47,6 @@ export default function Navbar() {
           })}
         </ul>
       </nav>
-
-      <div className="nav-secondary">
-        <button type="button" aria-label="Command" className="btn-header btn-cmd btn-transparent" onClick={query.toggle}>
-          <i className="ri-command-line" />
-        </button>
-      </div>
     </header>
   </AnimateSharedLayout>
 }

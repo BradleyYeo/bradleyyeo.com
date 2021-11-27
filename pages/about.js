@@ -9,8 +9,8 @@ import items from '../data/about'
 export async function getStaticProps() {
   const meta = {
     title: 'About // Bradley Yeo',
-    description: "<p><strong>Hey, I'm Bradley.</strong> I started as a software engineer back in 2009, working with Flash.</p><p>I'm currently the <strong>VP of Developer Experience</strong> at WorkOS. Before that, I was the CPO at Liferay Cloud. I'm originally from Brazil and now <strong>living in sunny California</strong> with my amazing wife and beautiful daughter.</p><p><strong>I love dark mode</strong>, open source, and side projects. When I'm not working, I like running, watching movies, and <strong>eating cheese</strong>.</p>",
-    tagline: 'Create. Share. Repeat.',
+    description: "<strong>Hi, I'm Bradley.</strong><p>I'm currently an <strong>Information Systems (Smart-City Management)</strong> undergraduate at Singapore Management University with a strong interest in <strong>cloud computing</strong>. Before that, I was a Business Administration student in Singapore Polytechnic. </p><p><strong>I love automation</strong>, AWS, and learning about DevOps. When I'm not working, I like running, reading, and <strong>travelling</strong>.</p>",
+    tagline: 'AWS. GCP. Linux.',
     image: '/static/images/about-bw.jpg',
     gradientColor: 'pink-purple',
     selectionColor: 'pink'
@@ -21,14 +21,14 @@ export async function getStaticProps() {
 
 function About(props) {
   const { title, description, image } = props
-  const bio = "Bradley Yeo is a Brazilian creator and programmer. He currently lives in Los Angeles, California, where he's the VP of Developer Experience at WorkOS. His lifelong appreciation for building software and sharing knowledge led him to speak in over 110 conferences worldwide. His passion for open source put him on the top 20 most active users on GitHub at age 22. Before moving to the US, Zeno developed multiple applications, mentored startups, and worked at major companies in Latin America, such as Globo and Petrobras."
+  const bio = "Bradley Yeo is a Singaporean creator and programmer. He currently is currently an Information Systems (Smart-City Management) undergraduate at Singapore Management University. He learns about AWS for fun and likes to learn about automation to optimise every part of his workflow. Before studying in SMU, Bradley learnt about Business and Maritime Law in Singapore Polytechnic."
 
   const renderIntro = () => {
     return <div className="about">
       <div className="about-section">
         <Image
           alt="Zeno"
-          src="/static/images/zeno-bw.jpg"
+          src="/static/images/bradley-bw.jpg"
           width="336"
           height="336"
           placeholder="blur"
@@ -52,7 +52,7 @@ function About(props) {
           <i className="ri-file-copy-line" /> Copy to Clipboard
         </button>
         <span style={{ margin: '0 20px 0 10px' }}>•</span>
-        <a download className="btn-transparent btn-primary" role="button" href="/static/images/zeno.png">
+        <a download className="btn-transparent btn-primary" role="button" href="/static/images/bradley-bw.jpg">
           <i className="ri-download-2-line" /> Download Headshot
         </a>
       </p>

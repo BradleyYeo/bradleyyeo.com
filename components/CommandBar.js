@@ -29,7 +29,7 @@ export default function CommandBar(props) {
       shortcut: ['e'],
       keywords: 'send-email',
       section: 'General',
-      perform: () => window.open('mailto:yeo.bradley@gmail.com', '_blank'),
+      perform: () => window.open('mailto:bradleyyeo.2020@scis.smu.edu.sg', '_blank'),
       icon: <i className='ri-mail-line' style={iconStyle} />,
     },
     {
@@ -101,7 +101,7 @@ export default function CommandBar(props) {
       shortcut: ['l'],
       keywords: 'go-linkedin',
       section: 'Follow',
-      perform: () => (window.open('https://www.linkedin.com/in/bradleyyeokian/', '_blank')),
+      perform: () => (window.open('https://linkedin.com/in/bradleyyeokian', '_blank')),
       icon: <i className='ri-linkedin-line' style={iconStyle} />,
     },
   ]

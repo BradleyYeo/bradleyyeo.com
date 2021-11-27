@@ -7,7 +7,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Bradley Yeo',
-      description: 'Building world-class products that make developers happy',
+      description: 'Singapore Management University (SMU)',
       image: '/static/images/home-bw.jpg',
     },
   }
@@ -33,7 +33,7 @@ function Home(props) {
           <div className="post-container">
             <div className="single">
               <h1>{title}</h1>
-              <p><strong>VP of Developer Experience at WorkOS</strong>.<br/>
+              <p><strong>Information Systems (Smart-City Management)</strong>.<br/>
               {description}.</p>
               <ShortcutHome />
             </div>

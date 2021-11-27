@@ -89,7 +89,7 @@ export default function CommandBar(props) {
     {
       id: 'github',
       name: 'Github',
-      shortcut: ['f', 'g'],
+      shortcut: ['g'],
       keywords: 'go-github',
       section: 'Follow',
       perform: () => (window.open('https://github.com/bradleyyeo', '_blank')),
@@ -98,10 +98,10 @@ export default function CommandBar(props) {
     {
       id: 'linkedin',
       name: 'LinkedIn',
-      shortcut: ['f', 'l'],
+      shortcut: ['l'],
       keywords: 'go-linkedin',
       section: 'Follow',
-      perform: () => (window.open('https://linkedin.com/in/bradleyyeo', '_blank')),
+      perform: () => (window.open('https://www.linkedin.com/in/bradleyyeokian/', '_blank')),
       icon: <i className='ri-linkedin-line' style={iconStyle} />,
     },
   ]

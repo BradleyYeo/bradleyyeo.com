@@ -59,7 +59,7 @@ function About(props) {
     </div>
   }
 
-  const renderAll = () => {
+  const renderExperience = () => {
     return items.map((item, index) => {
       return <div style={{ marginBottom: 40 }} key={index}>
         <h3>{item.jobTitle}</h3>
@@ -120,7 +120,7 @@ function About(props) {
       {renderBio()}
 
       <h2>Experience</h2>
-      {renderAll()}
+      {renderExperience()}
     </div>
   )
 }

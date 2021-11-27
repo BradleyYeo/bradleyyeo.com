@@ -22,21 +22,6 @@ export default function ListItem(props) {
     </li>
   }
 
-  // Podcasts
-  return <li className="list-item">
-    <a href={props.href} target="_blank">
-      <Animation index={props.index}>
-        <span className="list-item-title">
-          {props.title}
-        </span>
-        <span className="list-item-icon">
-          <i className="ri-arrow-right-up-line"></i>
-        </span>
-      </Animation>
-    </a>
-  </li>
-}
-
 function Animation(props) {
   const [hovered, setHovered] = useState('')
   const isHovered = hovered === props.index
@@ -58,4 +43,5 @@ function Animation(props) {
 
     {props.children}
   </motion.span>
+  }
 }

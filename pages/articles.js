@@ -20,7 +20,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Articles // Bradley Yeo',
-      tagline: 'Stories. Updates. Guides.',
+      tagline: 'Stories. Guides.',
       image: '/static/images/articles-bw.jpg',
       gradientColor: 'yellow-pink',
       selectionColor: 'orange',
@@ -32,8 +32,8 @@ export async function getStaticProps() {
 function Articles(props) {
   const renderFeatured = () => {
     const featured = [
-      'what-ive-learned-after-giving-100-talks',
-      'the-technology-stack-i-used-to-build-my-first-mobile-app',
+      'Useful lessons learnt in 2021',
+      'Economics of Google Cloud'
     ]
 
     return props.allPosts
@@ -67,7 +67,7 @@ function Articles(props) {
   }
 
   const { title, image } = props
-  const description = `Here you can find all the <strong>${props.allPosts.length} articles</strong> I wrote. You can read about useful things I have learnt in English.`
+  const description = `Here you can find all the <strong>${props.allPosts.length} articles</strong> I wrote.`
 
   return (
     <div className="single">
@@ -76,8 +76,8 @@ function Articles(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/projects/" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://bradleyyeo.com/projects/" property="og:url" />
+        <meta content={`https://bradleyyeo.com${image}`} property="og:image" />
       </Head>
 
       <AnimateSharedLayout>

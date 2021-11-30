@@ -9,7 +9,7 @@ import items from '../data/projects'
 export async function getStaticProps() {
   const meta = {
     title: 'Projects // Bradley Yeo',
-    tagline: 'Work. Hobby. Open Source.',
+    tagline: 'Learning and Building in Public',
     image: '/static/images/projects-bw.jpg',
     gradientColor: 'cyan-green',
     selectionColor: 'green',
@@ -21,10 +21,7 @@ export async function getStaticProps() {
 function Projects(props) {
   const renderFeatured = () => {
     const featured = [
-      'Dracula PRO',
-      'Clipboard.js',
-      'LeCheese',
-      '14 Habits'
+      'This Website',
     ]
 
     return items
@@ -85,10 +82,10 @@ function Projects(props) {
       <AnimateSharedLayout>
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
-        <h2>Featured Projects</h2>
-        <div className="featured-projects">
-          {renderFeatured()}
-        </div>
+        {/*<h2>Featured Projects</h2>*/}
+        {/*<div className="featured-projects">*/}
+        {/*  {renderFeatured()}*/}
+        {/*</div>*/}
 
         <h2>All Projects</h2>
         {renderAll()}

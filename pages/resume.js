@@ -6,7 +6,7 @@ import items from '../data/resume'
 export async function getStaticProps() {
   const meta = {
     title: 'Resume // Bradley Yeo',
-    description: 'Time is the most important asset. Time does not equal money. Time equals life. And you only have one chance to make it right.',
+    description: 'I am proficient in AWS, Python, Java, Javascript, HTML, CSS.',
     tagline: 'Bradley Yeo Kian',
     image: '/static/images/reminder-bw.jpg',
     gradientColor: 'cyan-green',
@@ -21,7 +21,7 @@ function Resume(props) {
 
   const renderEducation = () => {
     return items.map((item, index) => {
-      return <div style={{marginBottom: 40}} key={index}>
+      return <div style={{marginBottom: 20}} key={index}>
         <h3>{item.schoolName}</h3>
         <p>{item.major}</p>
         <p>{item.duration}</p>

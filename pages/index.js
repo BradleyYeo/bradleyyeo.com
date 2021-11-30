@@ -23,8 +23,8 @@ function Home(props) {
         <meta content={title} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
-        <meta content="https://zenorocha.com" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://bradleyyeo.com" property="og:url" />
+        <meta content={`https://bradleyyeo.com${image}`} property="og:image" />
       </Head>
 
       <Navbar />

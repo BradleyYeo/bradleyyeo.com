@@ -6,7 +6,7 @@ import { useKBar } from 'kbar'
 
 export default function Navbar() {
   const router = useRouter()
-  const pages = ['About', 'Articles', 'Projects', 'Reminder']
+  const pages = ['About', 'Articles', 'Projects', 'Resume']
   const [hovered, setHovered] = useState('')
   const { query } = useKBar();
 

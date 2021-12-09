@@ -2,7 +2,7 @@ export default function Footer() {
   const links = [
     {
       title: 'Source',
-      url: '',
+      url: 'https://github.com/BradleyYeo/bradleyyeo.com',
       icon: 'ri-braces-line'
     },
     {

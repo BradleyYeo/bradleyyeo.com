@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Main from '../layouts/Main'
 import items from '../data/resume'
+import { renderExperience } from './about'
 
 export async function getStaticProps() {
   const meta = {
@@ -53,7 +54,7 @@ function Resume(props) {
       <h2>Education</h2>
       {renderEducation()}
       <h2>Experience</h2>
-
+      {renderExperience()}
       <h2>Certification</h2>
       <p>AWS Certified IT Solution Architect Associate</p>
       <p>AWS Certified Cloud Practitioner</p>

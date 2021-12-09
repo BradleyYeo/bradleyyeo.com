@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { parseISO, format, intervalToDuration } from 'date-fns'
+import {parseISO, format, intervalToDuration} from 'date-fns'
 import Main from '../layouts/Main'
 import stripHtml from '../lib/strip-html'
 import items from '../data/about'
@@ -16,11 +16,49 @@ export async function getStaticProps() {
     selectionColor: 'pink'
   }
 
-  return { props: meta }
+  return {props: meta}
+}
+
+export const renderExperience = () => {
+  return items.map((item, index) => {
+    return <div style={{marginBottom: 40}} key={index}>
+      <h3>{item.jobTitle}</h3>
+      <p style={{margin: 0}}>
+        <a href={item.companyUrl} target="_blank">{item.company}</a>
+        <span> • {item.location}</span>
+      </p>
+      <p style={{margin: 0}}>
+        <span>{format(parseISO(item.startDate), 'LLL yyyy')}</span>
+        <span> – </span>
+        <span>{item.endDate ? format(parseISO(item.endDate), 'LLL yyyy') : 'Present'}</span>
+        <span> • </span>
+        <span>{getDuration(item.startDate, item.endDate)}</span>
+      </p>
+    </div>
+  })
+}
+
+const getDuration = (startDate, endDate) => {
+  const durationObj = intervalToDuration({
+    start: parseISO(startDate),
+    end: endDate ? parseISO(endDate) : new Date()
+  })
+
+  let durationStr = ''
+
+  if (durationObj.years > 1) {
+    durationStr = `${durationObj.years} yrs `
+  } else if (durationObj.years === 1) {
+    durationStr = `${durationObj.years} yr `
+  }
+
+  durationStr += `${durationObj.months} mos`
+
+  return durationStr
 }
 
 function About(props) {
-  const { title, description, image } = props
+  const {title, description, image} = props
   const bio = "Bradley Yeo is a Singaporean creator and programmer. He currently is currently an Information Systems (Smart-City Management) undergraduate at Singapore Management University. He spends his free time building projects on AWS. Before enrolling in SMU, Bradley developed his business acumen through his studies in Singapore Polytechnic."
 
   const renderIntro = () => {
@@ -37,7 +75,7 @@ function About(props) {
         />
       </div>
       <div
-        dangerouslySetInnerHTML={{ __html: description }}
+        dangerouslySetInnerHTML={{__html: description}}
         className="about-section"
       />
     </div>
@@ -49,54 +87,17 @@ function About(props) {
       <blockquote><p>{bio}</p></blockquote>
       <p>
         <button className="btn-transparent btn-primary" onClick={copyBio}>
-          <i className="ri-file-copy-line" /> Copy to Clipboard
+          <i className="ri-file-copy-line"/> Copy to Clipboard
         </button>
-        <span style={{ margin: '0 20px 0 10px' }}>•</span>
+        <span style={{margin: '0 20px 0 10px'}}>•</span>
         <a download className="btn-transparent btn-primary" role="button" href="/static/images/bradley-col.jpg">
-          <i className="ri-download-2-line" /> Download Headshot
+          <i className="ri-download-2-line"/> Download Headshot
         </a>
       </p>
     </div>
   }
 
-  const renderExperience = () => {
-    return items.map((item, index) => {
-      return <div style={{ marginBottom: 40 }} key={index}>
-        <h3>{item.jobTitle}</h3>
-        <p style={{ margin: 0 }}>
-          <a href={item.companyUrl} target="_blank">{item.company}</a>
-          <span> • {item.location}</span>
-        </p>
-        <p style={{ margin: 0 }}>
-          <span>{format(parseISO(item.startDate), 'LLL yyyy')}</span>
-          <span> – </span>
-          <span>{item.endDate ? format(parseISO(item.endDate), 'LLL yyyy') : 'Present'}</span>
-          <span> • </span>
-          <span>{getDuration(item.startDate, item.endDate)}</span>
-        </p>
-      </div>
-    })
-  }
 
-  const getDuration = (startDate, endDate) => {
-    const durationObj = intervalToDuration({
-      start: parseISO(startDate),
-      end: endDate ? parseISO(endDate) : new Date()
-    })
-
-    let durationStr = ''
-
-    if (durationObj.years > 1) {
-      durationStr = `${durationObj.years} yrs `
-    }
-    else if (durationObj.years === 1) {
-      durationStr = `${durationObj.years} yr `
-    }
-
-    durationStr += `${durationObj.months} mos`
-
-    return durationStr
-  }
 
   const copyBio = (e) => {
     e.preventDefault()
@@ -107,18 +108,16 @@ function About(props) {
     <div className="single">
       <Head>
         <title>{title}</title>
-        <meta content={title} property="og:title" />
-        <meta content={stripHtml(description)} name="description" />
-        <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://bradleyyeo.com/About" property="og:url" />
-        <meta content={`https://bradleyyeo.com${image}`} property="og:image" />
+        <meta content={title} property="og:title"/>
+        <meta content={stripHtml(description)} name="description"/>
+        <meta content={stripHtml(description)} property="og:description"/>
+        <meta content="https://bradleyyeo.com/About" property="og:url"/>
+        <meta content={`https://bradleyyeo.com${image}`} property="og:image"/>
       </Head>
 
       {renderIntro()}
-
       <h2>Biography</h2>
       {renderBio()}
-
       <h2>Experience</h2>
       {renderExperience()}
     </div>

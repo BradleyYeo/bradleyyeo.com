@@ -28,7 +28,7 @@ function About(props) {
       <div className="about-section">
         <Image
           alt="Bradley"
-          src="/static/images/bradley-col.jpg"
+          src="public/static/images/bradley-col.jpg"
           width="336"
           height="336"
           placeholder="blur"
@@ -52,7 +52,7 @@ function About(props) {
           <i className="ri-file-copy-line" /> Copy to Clipboard
         </button>
         <span style={{ margin: '0 20px 0 10px' }}>•</span>
-        <a download className="btn-transparent btn-primary" role="button" href="/static/images/bradley-col.jpg">
+        <a download className="btn-transparent btn-primary" role="button" href="public/static/images/bradley-col.jpg">
           <i className="ri-download-2-line" /> Download Headshot
         </a>
       </p>

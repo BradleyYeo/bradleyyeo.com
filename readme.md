@@ -10,7 +10,7 @@
 * **Back-end:** [Next.js](https://nextjs.org/)
 * **Front-end:** [React](https://reactjs.org/)
 * **Animation:** [Framer](https://www.framer.com/docs/animation/)
-* **Deployment:** [AWS](https://aws.amazon.com/)
+* **Deployment:** [Vercel](https://vercel.com/)
 
 ## Running locally
 

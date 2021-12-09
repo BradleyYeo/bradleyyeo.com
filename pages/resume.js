@@ -13,11 +13,11 @@ export async function getStaticProps() {
     selectionColor: 'green',
   }
 
-  return { props: meta }
+  return {props: meta}
 }
 
 function Resume(props) {
-  const { title, description, image } = props
+  const {title, description, image} = props
 
   const renderEducation = () => {
     return items.map((item, index) => {
@@ -26,7 +26,7 @@ function Resume(props) {
         <p>{item.major}</p>
         <p>{item.duration}</p>
         <p>{item.coursework}</p>
-        </div>
+      </div>
     })
   }
 
@@ -34,11 +34,11 @@ function Resume(props) {
     <div className="single">
       <Head>
         <title>{title}</title>
-        <meta content={title} property="og:title" />
-        <meta content={description} name="description" />
-        <meta content={description} property="og:description" />
-        <meta content="https://bradleyyeo.com/resume" property="og:url" />
-        <meta content={`https://bradleyyeo.com${image}`} property="og:image" />
+        <meta content={title} property="og:title"/>
+        <meta content={description} name="description"/>
+        <meta content={description} property="og:description"/>
+        <meta content="https://bradleyyeo.com/resume" property="og:url"/>
+        <meta content={`https://bradleyyeo.com${image}`} property="og:image"/>
       </Head>
 
       <p className="manifesto">I am proficient in <strong>AWS, Python, Java, Javascript, HTML, CSS.</strong></p>
@@ -55,9 +55,11 @@ function Resume(props) {
       <h2>Experience</h2>
 
       <h2>Certification</h2>
-      <p>AWS Certified IT Solution Architect Associate, AWS Certified Cloud Practitioner</p>
-      <a download className="btn-transparent btn-primary" role="button" href="/static/resume_pdf/Bradley_Yeo_Resume.pdf">
-        <i className="ri-download-2-line" /> Download Resume
+      <p>AWS Certified IT Solution Architect Associate</p>
+      <p>AWS Certified Cloud Practitioner</p>
+      <a download className="btn-transparent btn-primary" role="button"
+         href="/static/resume_pdf/Bradley_Yeo_Resume.pdf">
+        <i className="ri-download-2-line"/> Download Resume
       </a>
     </div>
   )

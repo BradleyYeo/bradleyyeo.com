@@ -1,7 +1,7 @@
 const items = [
   {
     schoolName: 'Singapore Management University (Information Systems)',
-    major: 'Smart-City Management and IT Solution Management',
+    major: 'Smart-City Management',
     duration: 'Aug 2020 - May 2023',
     coursework: 'Computational Thinking, Data Management, Analytics, CyberSecurity'
   },

@@ -21,7 +21,7 @@ export async function getStaticProps() {
 
 function About(props) {
   const { title, description, image } = props
-  const bio = "Bradley Yeo is a Singaporean creator and programmer. He currently is currently an Information Systems (Smart-City Management) undergraduate at Singapore Management University. He learns about AWS for fun and likes to learn about automation to optimise every part of his workflow. Before studying in SMU, Bradley learnt about Business and Maritime Law in Singapore Polytechnic."
+  const bio = "Bradley Yeo is a Singaporean creator and programmer. He currently is currently an Information Systems (Smart-City Management) undergraduate at Singapore Management University. He spends his free time building projects on AWS. Before enrolling in SMU, Bradley developed his business acumen through his studies in Singapore Polytechnic."
 
   const renderIntro = () => {
     return <div className="about">
@@ -116,7 +116,7 @@ function About(props) {
 
       {renderIntro()}
 
-      <h2>Bio</h2>
+      <h2>Biography</h2>
       {renderBio()}
 
       <h2>Experience</h2>

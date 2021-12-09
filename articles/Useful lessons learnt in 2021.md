@@ -6,10 +6,10 @@ date: "2021-08-12"
 ---
 
 ## 1. Perception is key
-
+Morgan Housel
 
 ## 2. Treat Ego as a Tool
-
+Scott Adams
 
 ## 3. Music and Long Walks
 

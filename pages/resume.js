@@ -48,7 +48,7 @@ function Resume(props) {
         <h3>Languages</h3>
         <p>Python (Pandas, NumPy, scikit-learn), SQL, HTML, CSS, Java, Javascript</p>
         <h3>Libraries, Frameworks, Tools</h3>
-        <p>AWS, Git, Github, Bash, MongoDB, Vim, React, Node.js, Linux</p>
+        <p>AWS, Git, GitHub, Bash, MongoDB, Vim, React, Node.js, Linux</p>
       </section>
 
       <h2>Education</h2>

@@ -75,18 +75,10 @@ function Projects(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/projects" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
       </Head>
 
       <AnimateSharedLayout>
         <p dangerouslySetInnerHTML={{ __html: description }} />
-
-        {/*<h2>Featured Projects</h2>*/}
-        {/*<div className="featured-projects">*/}
-        {/*  {renderFeatured()}*/}
-        {/*</div>*/}
-
         <h2>All Projects</h2>
         {renderAll()}
       </AnimateSharedLayout>

@@ -1,5 +1,12 @@
 const items = [
   {
+    jobTitle: 'Data Analyst',
+    company: 'Seamoney',
+    companyUrl: 'https://www.seamoney.com',
+    startDate: '2022-05-08',
+    location: 'Singapore',
+  },
+  {
     jobTitle: 'Student Assistant',
     company: 'SMU Academy',
     companyUrl: 'https://academy.smu.edu.sg',

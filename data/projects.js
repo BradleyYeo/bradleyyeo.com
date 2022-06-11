@@ -3,7 +3,7 @@ const items = [
     year: '2021',
     projects: [
       {
-        title: 'AWS Cloud Resume',
+        title: 'This website',
         url: '',
         active: true,
       }

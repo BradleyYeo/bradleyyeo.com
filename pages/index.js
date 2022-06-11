@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import ShortcutHome from '../components/ShortcutHome'
 
 export async function getStaticProps() {
   return {
@@ -35,7 +34,6 @@ function Home(props) {
               <h1>{title}</h1>
               <p><strong>Information Systems (Smart-City Management)</strong>.<br/>
               {description}.</p>
-              <ShortcutHome />
             </div>
           </div>
         </div>

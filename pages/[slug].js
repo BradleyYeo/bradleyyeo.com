@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import Blogpost from '../layouts/Blogpost'
 import ErrorMessage from '../components/ErrorMessage'
 import { getPostBySlug, getAllPosts, convertMarkdownToHtml } from '../lib/blog'
 

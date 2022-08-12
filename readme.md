@@ -53,10 +53,6 @@ The basic file structure for the project is organized in the following way:
 `-- public
 ```
 
-### [articles](https://github.com/bradleyyeo/bradleyyeo.com/tree/master/articles)
-
-Here you'll find a list of markdown files for each post.
-
 ### [components](https://github.com/bradleyyeo/bradleyyeo.com/tree/master/components)
 
 Here you'll find reusable blocks of React components.
